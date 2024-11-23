@@ -27,3 +27,12 @@ jobs:
       run: dotnet build 
     - name: Test
       run: dotnet test --no-build --verbosity normal
+
+    - name: create temp Artifacts
+      run: mkdir downloads
+
+    - name: Upload artifact to downloads
+      uses: actions/upload-artifact@v2
+      with:
+        name: assets for download
+        path: downloads
