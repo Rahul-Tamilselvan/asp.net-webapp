@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: assets for download
-        path: downloads
+        path: .github/workflows
